@@ -12,8 +12,8 @@ Neste projeto, demonstrei a implementação do padrão Visitor através de um ex
 Com o padrão Visitor, a lógica de cálculo é delegada para a classe CalculadoraValorTotal, que implementa a interface Visitor. Cada classe de produto, como Livro, Eletronico e Roupa, define o método aceitar, que recebe o Visitor e chama o método de visita correspondente. Isso torna o código mais modular e facilita a adição de novas operações no futuro.
 
 ### Estrutura do Projeto
-CarrinhoCompras: Classe principal que contém os produtos.
-Produto: Interface comum para todos os produtos.
-Livro, Eletronico, Roupa: Classes que implementam a interface Produto.
-Visitor: Interface para os Visitors.
-CalculadoraValorTotal: Classe que implementa a interface Visitor e calcula o valor total dos produtos.
+- CarrinhoCompras: Classe principal que contém os produtos.
+- Produto: Interface comum para todos os produtos.
+- Livro, Eletronico, Roupa: Classes que implementam a interface Produto.
+- Visitor: Interface para os Visitors.
+- CalculadoraValorTotal: Classe que implementa a interface Visitor e calcula o valor total dos produtos.
