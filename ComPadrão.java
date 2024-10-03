@@ -1,26 +1,3 @@
-interface Visitor {
-    double visitarLivro(Livro livro);
-    double visitarEletronico(Eletronico eletronico);
-    double visitarRoupa(Roupa roupa);
-  }
-  
-  class CalculadoraValorTotal implements Visitor {
-    @Override
-    public double visitarLivro(Livro livro) {
-      // Lógica de cálculo específica para livros
-    }
-  
-    @Override
-    public double visitarEletronico(Eletronico eletronico) {
-      // Lógica de cálculo específica para eletrônicos
-    }
-  
-    @Override
-    public double visitarRoupa(Roupa roupa) {
-      // Lógica de cálculo específica para roupas
-    }
-  }
-  
   abstract class Produto {
     String nome;
     double preco;
@@ -89,5 +66,28 @@ interface Visitor {
         total += produto.aceitar(visitor);
       }
       return total;
+    }
+  }
+
+    interface Visitor {
+    double visitarLivro(Livro livro);
+    double visitarEletronico(Eletronico eletronico);
+    double visitarRoupa(Roupa roupa);
+  }
+  
+  class CalculadoraValorTotal implements Visitor {
+    @Override
+    public double visitarLivro(Livro livro) {
+      // Lógica de cálculo específica para livros
+    }
+  
+    @Override
+    public double visitarEletronico(Eletronico eletronico) {
+      // Lógica de cálculo específica para eletrônicos
+    }
+  
+    @Override
+    public double visitarRoupa(Roupa roupa) {
+      // Lógica de cálculo específica para roupas
     }
   }
